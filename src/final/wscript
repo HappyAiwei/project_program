@@ -11,7 +11,7 @@ def build(ctx):
             ctx.path_to(ctx, 'OUT_DATA', 'clean_X.csv'),
             ctx.path_to(ctx, 'OUT_DATA', 'clean_y.csv'),
             ctx.path_to(ctx, 'OUT_DATA', 'clean_X_test.csv'),
-            ctx.path_to(ctx, 'OUT_DATA', 'test.csv')
+            ctx.path_to(ctx, 'IN_DATA', 'test.csv')
         ],
         target=[
             ctx.path_to(ctx, 'OUT_DATA', 'prediction_result.csv')

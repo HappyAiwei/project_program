@@ -1,0 +1,12 @@
+#! python
+def build(ctx):
+
+    ctx(
+        features='run_py_script',
+        source='regression_models.py',
+        deps=[
+            ctx.path_to(ctx, 'OUT_DATA', 'clean_X.csv'),
+            ctx.path_to(ctx, 'OUT_DATA', 'clean_y.csv'),
+            ctx.path_to(ctx, 'OUT_DATA', 'clean_X_test.csv')
+        ],
+    )
